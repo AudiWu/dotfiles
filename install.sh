@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # Any subsequent(*) commands which fail will cause the shell script to exit immediately
 set -e
@@ -24,11 +24,11 @@ fail () {
   exit
 }
 
-# Start installing dotfiles
+# Start running dotfiles
 
 info "Setting up your Mac..."
 
-## Install or update homebrew.
+# Install or update homebrew.
 if test ! $(which brew); then
     info "Installing Homebrew"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -36,8 +36,15 @@ if test ! $(which brew); then
 else
     info "Updating Homebrew"
     brew update
+    brew upgrade
     success "HomeBrew successfully updated"
 fi
+
+# Install dependecies with brew bundle
+info "Installing dependecies using homebrew"
+brew tap homebrew/bundle
+brew bundle
+success "Dependencies successfully installed"
 
 echo ''
 success 'All installed!'
