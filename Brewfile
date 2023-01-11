@@ -4,7 +4,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
-Make sure apps get installed in system Applications dir
+# Make sure apps get installed in system Applications dir
 cask_args appdir: '/Applications'
 
 # Install ZSH

@@ -32,6 +32,8 @@ info "Setting up your Mac..."
 if test ! $(which brew); then
     info "Installing Homebrew"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
     success "Homebrew succesfully installed"
 else
     info "Updating Homebrew"
