@@ -10,10 +10,6 @@ info () {
   printf "\r  [ \033[00;34m..\033[0m ] $1\n"
 }
 
-user () {
-  printf "\r  [ \033[0;33m??\033[0m ] $1\n"
-}
-
 success () {
   printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
 }
@@ -47,6 +43,13 @@ info "Installing dependecies using homebrew"
 brew tap homebrew/bundle
 brew bundle
 success "Dependencies successfully installed"
+
+# Set git identity
+info "Setting up git global username and email"
+git config --global user.name "Audi"
+git config --global user.email "audiwu321@gmail.com"
+git config --global credential.helper osxkeychain
+success "Successfully setting up git global username and email"
 
 echo ''
 success 'All installed!'
