@@ -15,8 +15,6 @@ brew 'zsh-completions'
 brew 'git'
 brew 'tree'
 brew 'node'
-brew 'rectangle'
-brew 'starship'
 brew 'wget'
 brew 'yarn'
 
