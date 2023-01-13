@@ -20,5 +20,8 @@ ZSH_CUSTOM=$DOTFILES
 # Load: oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# Load: ALIASES
+source $HOME/Desktop/dotfiles/alias
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
