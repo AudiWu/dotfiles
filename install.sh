@@ -24,6 +24,12 @@ fail () {
 
 info "Setting up your Mac..."
 
+# Install Oh My Zsh if we don't have
+if test ! $(which omz); then
+  info "Installing Oh My Zsh"
+  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
+fi
+
 # Install or update homebrew.
 if test ! $(which brew); then
     info "Installing Homebrew"
@@ -43,6 +49,12 @@ info "Installing dependecies using homebrew"
 brew tap homebrew/bundle
 brew bundle
 success "Dependencies successfully installed"
+
+# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+info "Setting oh-my-zsh config"
+rm -rf $HOME/.zshrc
+ln -s $HOME/Desktop/dotfiles/.zshrc $HOME/.zshrc # Remember to change the first path based on your dotfiles location
+success "Successfully setting up oh-my-zsh config"
 
 # Set git identity
 info "Setting up git global username and email"
