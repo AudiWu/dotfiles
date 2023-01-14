@@ -5,8 +5,6 @@ The dotfiles to help setting macOs enviroment
 
 🚨 Warning: before you use my dotfiles to installing macOs enviroment please review the code first.
 
-
-
 ## Installation
 
 1. Install x-code through app store
