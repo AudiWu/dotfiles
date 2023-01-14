@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Path to your dotfiles.
-export DOTFILES=$HOME/Desktop/dotfiles
+export DOTFILES=$HOME/dotfiles
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -21,7 +21,7 @@ ZSH_CUSTOM=$DOTFILES
 source $ZSH/oh-my-zsh.sh
 
 # Load: ALIASES
-source $HOME/Desktop/dotfiles/alias
+source $HOME/dotfiles/alias
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -21,14 +21,6 @@ fail () {
 # Start running dotfiles
 info "Setting up your Mac..."
 
-# Install Oh My Zsh if we don't have
-if [ -d ~/.oh-my-zsh ]; then
-  info "Oh My Zsh already exists"
-else
-  info "Installing Oh My Zsh"
-  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
-fi
-
 # # Install or update homebrew.
 if test ! $(which brew); then
     info "Installing Homebrew"
@@ -54,7 +46,7 @@ info "Setting oh-my-zsh config"
 info "Clone powerlevel10k"
 git clone https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/themes/powerlevel10k
 rm -rf $HOME/.zshrc
-ln -s $HOME/Desktop/dotfiles/.zshrc $HOME/.zshrc # Remember to change the first path based on your dotfiles location
+ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc
 success "Successfully setting up oh-my-zsh config"
 
 # Set git identity
@@ -66,5 +58,5 @@ success "Successfully setting up git global username and email"
 
 # Set macOS preferences - we will run this last because this will reload the shell
 info "Setting up macOS preferences"
-source $HOME/Desktop/dotfiles/.macos
+source $HOME/dotfiles/.macos
 success "Successfully setting up macOS preferences"
