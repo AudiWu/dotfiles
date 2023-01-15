@@ -21,7 +21,7 @@ fail () {
 # Start running dotfiles
 info "Setting up your Mac..."
 
-# # Install or update homebrew.
+# Install or update homebrew.
 if test ! $(which brew); then
     info "Installing Homebrew"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -42,12 +42,12 @@ brew bundle
 success "Dependencies successfully installed"
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-info "Setting oh-my-zsh config"
+info "Setting zsh config"
 info "Clone powerlevel10k"
 git clone https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/themes/powerlevel10k
 rm -rf $HOME/.zshrc
 ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc
-success "Successfully setting up oh-my-zsh config"
+success "Successfully setting up zsh config"
 
 # Set git identity
 info "Setting up git global username and email"
