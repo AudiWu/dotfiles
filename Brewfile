@@ -9,7 +9,6 @@ cask_args appdir: '/Applications'
 
 # Install ZSH
 brew 'zsh'
-brew 'zsh-completions'
 
 # Install Binaries
 brew 'git'
@@ -22,6 +21,3 @@ brew 'yarn'
 cask "google-chrome"
 cask 'iterm2'
 cask "visual-studio-code"
-
-# Fonts
-cask 'font-fira-code'
