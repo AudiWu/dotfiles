@@ -21,6 +21,14 @@ fail () {
 # Start running dotfiles
 info "Setting up your Mac..."
 
+# Install Oh My Zsh if we don't have
+if [ -d ~/.oh-my-zsh ]; then
+  info "Oh My Zsh already exists"
+else
+  info "Installing Oh My Zsh"
+  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
+fi
+
 # Install or update homebrew.
 if test ! $(which brew); then
     info "Installing Homebrew"

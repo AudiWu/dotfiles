@@ -17,11 +17,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$DOTFILES
 
+# Load plugins
+plugins=(git)
+
 # Load: oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-
-# Load: ALIASES
-source $HOME/dotfiles/alias
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
