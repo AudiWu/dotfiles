@@ -19,5 +19,6 @@ brew 'yarn'
 
 # Apps
 cask "google-chrome"
+cask "hammerspoon"
 cask 'iterm2'
 cask "visual-studio-code"
