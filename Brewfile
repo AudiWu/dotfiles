@@ -18,7 +18,10 @@ brew 'wget'
 brew 'yarn'
 
 # Apps
-cask "google-chrome"
-cask "hammerspoon"
+cask 'blender'
+cask 'discord'
+cask 'google-chrome'
+cask 'hammerspoon'
 cask 'iterm2'
-cask "visual-studio-code"
+cask 'steam'
+cask 'visual-studio-code'
