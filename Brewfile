@@ -14,8 +14,10 @@ brew 'zsh'
 brew 'git'
 brew 'tree'
 brew 'node'
+brew 'pnpm'
 brew 'wget'
 brew 'yarn'
+
 
 # Apps
 cask 'blender'
