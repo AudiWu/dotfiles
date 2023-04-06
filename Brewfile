@@ -16,6 +16,8 @@ brew 'tree'
 brew 'node'
 brew 'pnpm'
 brew 'rust'
+brew 'rustup-analyzer'
+brew 'rustup-init'
 brew 'wget'
 brew 'yarn'
 
