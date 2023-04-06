@@ -15,6 +15,7 @@ brew 'git'
 brew 'tree'
 brew 'node'
 brew 'pnpm'
+brew 'rust'
 brew 'wget'
 brew 'yarn'
 
