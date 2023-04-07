@@ -18,6 +18,7 @@ brew 'pnpm'
 brew 'rust'
 brew 'rustup-init'
 brew 'rustup-analyzer'
+brew 'rustfmt'
 brew 'wget'
 brew 'yarn'
 
