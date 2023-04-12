@@ -12,6 +12,7 @@ brew 'zsh'
 
 # Install Binaries
 brew 'git'
+brew 'go'
 brew 'tree'
 brew 'node'
 brew 'pnpm'
