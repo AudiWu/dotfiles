@@ -11,6 +11,7 @@ cask_args appdir: '/Applications'
 brew 'zsh'
 
 # Install Binaries
+brew 'docker'
 brew 'git'
 brew 'go'
 brew 'tree'
@@ -24,7 +25,6 @@ brew 'rustup-analyzer'
 brew 'rustfmt'
 brew 'wget'
 brew 'yarn'
-
 
 # Apps
 cask 'blender'
