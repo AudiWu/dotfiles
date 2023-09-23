@@ -29,6 +29,7 @@ brew 'yarn'
 # Apps
 cask 'blender'
 cask 'discord'
+cask 'fork'
 cask 'google-chrome'
 cask 'hammerspoon'
 cask 'iterm2'
