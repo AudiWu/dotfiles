@@ -23,9 +23,13 @@ curl https://raw.githubusercontent.com/AudiWu/dotfiles/HEAD/ssh.sh | sh -s "<you
 
 3. Clone this repo
 
-4. Run the install.sh file 
+```
+git clone git@github.com:AudiWu/dotfiles.git
+```
+
+4. Open the repo file and run the install.sh file 
 
 ```
-cd script
+cd ~/dotfiles
 ./install.sh
 ```
