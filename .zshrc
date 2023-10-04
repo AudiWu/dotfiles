@@ -20,8 +20,6 @@ ZSH_CUSTOM=$DOTFILES
 # Load plugins
 plugins=(git)
 
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-
 # Load: oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
